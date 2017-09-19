@@ -18,18 +18,22 @@ function loopTwo(number, power){
 
       let sum = 0;
 
-      for(let p = 0; p < power; p=p + 1){
+      for(let p = 0; p <= power; p++){
 
-        sum = sum + number^p;
+        sum = sum + Math.pow(number, p)
       }
-      console.log(sum);
+      return sum;
 }
 
 function loopThree(symbol, number){
 
-      for(let n = 0; n<number; n=n+1){
+      let lastTime = "";
 
-        console.log();
+      for(let s = 1; s <= number; s++){
+
+        lastTime = lastTime + symbol;
+
+        console.log(lastTime);
 
       }
 
